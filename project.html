@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Projects — Ghenghis Luxury</title>
+<meta name="description" content="Explore Ghenghis Luxury bespoke interior projects across Lagos — Hotels, Offices, Restaurants, Residences and more."/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<nav id="main-nav">
+  <a href="index.html" class="nav-logo" style="display: flex; align-items: center; gap: 12px;">
+    <img src="images/logo.png" alt="Logo" class="nav-logo-img" style="height: 48px; width: auto;"/>
+    <span class="nav-logo-text" style="font-family:'Cormorant Garamond',Georgia,serif;font-size:18px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--black);">Ghenghis Luxury</span>
+  </a>
+  <ul class="nav-links">
+    <li class="nav-item">
+      <a href="products.html">Products</a>
+      <div class="dropdown">
+        <a href="products.html#doors">Doors</a><a href="products.html#pop">POP</a>
+        <a href="products.html#tiling">Tiling</a><a href="products.html#plumbing">Plumbing</a>
+        <a href="products.html#architecture">Architecture</a><a href="products.html#screading">Screading</a>
+      </div>
+    </li>
+    <li class="nav-item"><a href="project.html">Project</a></li>
+    <li class="nav-item"><a href="philosophy.html">About</a></li>
+    <li class="nav-item"><a href="leadership.html">Leadership</a></li>
+    <li class="nav-item"><a href="bespoke.html">Bespoke</a></li>
+    <li class="nav-item"><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-right"><a href="contact.html">Enquire</a></div>
+  <button id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div id="mobile-nav">
+  <a class="mob-link" href="index.html">Home</a>
+  <a class="mob-link" href="products.html">Products</a>
+  <a class="mob-link" href="project.html">Project</a>
+  <a class="mob-link" href="philosophy.html">About</a>
+  <a class="mob-link" href="leadership.html">Leadership</a>
+  <a class="mob-link" href="bespoke.html">Bespoke</a>
+  <a class="mob-link" href="contact.html">Contact</a>
+</div>
+
+<div class="page-hero">
+  <img src="images/service_tiling.png" alt="Ghenghis Luxury Projects"/>
+  <div class="page-hero-overlay"><h1>Project</h1></div>
+</div>
+
+<div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span style="color:var(--black)">Project</span></div>
+
+<!-- FILTERS -->
+<div class="project-filters">
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="residential">Residential</button>
+  <button class="filter-btn" data-filter="hotel">Hotel</button>
+  <button class="filter-btn" data-filter="office">Office</button>
+  <button class="filter-btn" data-filter="restaurant">Restaurant</button>
+  <button class="filter-btn" data-filter="commercial">Commercial</button>
+  <button class="filter-btn" data-filter="culture">Culture</button>
+</div>
+
+<!-- PROJECT GRID -->
+<div class="projects-list">
+  <div class="projects-list-grid" id="project-grid">
+
+    <div class="project-list-card reveal" data-cat="hotel">
+      <img src="images/user_hotel.jpg" alt="Hotel Project"/>
+    </div>
+
+    <div class="project-list-card reveal" data-cat="restaurant">
+      <img src="images/user_restaurant.jpg" alt="Restaurant Project"/>
+    </div>
+
+    <div class="project-list-card reveal" data-cat="residential">
+      <img src="images/user_residence.jpg" alt="Residence Project"/>
+    </div>
+
+    <div class="project-list-card reveal" data-cat="office">
+      <img src="images/user_office.jpg" alt="Office Project"/>
+    </div>
+
+  </div>
+</div>
+
+<!-- CTA -->
+<section style="padding:70px 60px;background:var(--off-white);text-align:center" class="reveal">
+  <p class="section-label" style="text-align:center">Start Your Project</p>
+  <h2 class="section-title" style="text-align:center;margin:0 auto 20px">Let's Work Together</h2>
+  <p style="font-size:13px;color:var(--mid-grey);max-width:480px;margin:0 auto 28px">We work with residential clients, developers, hoteliers and restaurateurs across Nigeria to deliver spaces of enduring quality.</p>
+  <a href="bespoke.html" style="display:inline-block;padding:13px 32px;border:1px solid var(--black);font-size:10px;letter-spacing:0.2em;text-transform:uppercase;transition:all 0.3s" onmouseover="this.style.background='#111';this.style.color='#fff'" onmouseout="this.style.background='transparent';this.style.color='#111'">Explore Bespoke Service</a>
+</section>
+
+<footer id="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-logo"><img src="images/logo.png" alt="Ghenghis Luxury" onerror="this.outerHTML='<span style=&quot;font-family:Georgia,serif;font-size:16px;letter-spacing:0.1em;text-transform:uppercase;color:#fff&quot;>Ghenghis Luxury</span>'"/></div>
+      <div class="footer-contact">
+        <a href="tel:08143850099">T. 081 4385 0099</a>
+        <a href="mailto:contact@ghenghisluxury.com">contact@ghenghisluxury.com</a>
+      </div>
+    </div>
+    <div class="footer-col"><h5>Services</h5><a href="products.html#doors">Doors</a><a href="products.html#pop">POP</a><a href="products.html#tiling">Tiling</a><a href="products.html#plumbing">Plumbing</a><a href="products.html#architecture">Architecture</a><a href="products.html#screading">Screading</a></div>
+    <div class="footer-col"><h5>Client Service</h5><a href="contact.html">FAQ</a><a href="contact.html">Contact</a><a href="contact.html">Location</a></div>
+    <div class="footer-col"><h5>Legal</h5><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-legal">COMPANY: Ghenghis Luxury &nbsp;|&nbsp; ADDRESS: 16 Jiuhua St, Eti-Osa 106104, Lagos, Nigeria<br>ⓒ GHENGHISLUXURY All rights reserved.</p>
+    <div class="footer-links"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('hamburger').addEventListener('click',function(){document.getElementById('mobile-nav').classList.toggle('open');this.style.opacity=document.getElementById('mobile-nav').classList.contains('open')?'0.5':'1';});
+window.addEventListener('scroll',()=>document.getElementById('main-nav').classList.toggle('scrolled',window.scrollY>40));
+document.getElementById('main-nav').classList.add('scrolled');
+
+document.querySelectorAll('.filter-btn').forEach(btn=>{
+  btn.addEventListener('click',function(){
+    document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+    this.classList.add('active');
+    const f=this.dataset.filter;
+    document.querySelectorAll('.project-list-card').forEach(card=>{
+      card.style.display=(f==='all'||card.dataset.cat===f)?'block':'none';
+    });
+  });
+});
+
+const obs=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting){el.target.classList.add('visible');obs.unobserve(el.target);}});},{threshold:0.08});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>

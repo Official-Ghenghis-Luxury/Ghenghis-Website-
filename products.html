@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Products & Services — Ghenghis Luxury</title>
+<meta name="description" content="Ghenghis Luxury premium services: Doors, POP, Tiling, Plumbing, Architecture and Screading across Lagos, Nigeria."/>
+<link rel="stylesheet" href="styles.css"/>
+<style>
+.services-hero{position:relative;height:50vh;overflow:hidden;margin-top:70px;}
+.services-hero img{width:100%;height:100%;object-fit:cover;}
+.services-hero-overlay{position:absolute;inset:0;background:rgba(0,0,0,0.45);display:flex;align-items:flex-end;padding:50px 60px;}
+.services-hero-overlay h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(32px,5vw,58px);font-weight:300;color:#fff;letter-spacing:0.04em;}
+.services-section{padding:80px 60px;border-bottom:1px solid #d4d0cb;}
+.services-section:last-of-type{border-bottom:none;}
+.service-inner{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start;}
+.service-inner.reverse{direction:rtl;}
+.service-inner.reverse > *{direction:ltr;}
+.service-number{font-family:'Cormorant Garamond',Georgia,serif;font-size:80px;font-weight:300;color:#ede9e3;line-height:1;margin-bottom:-10px;}
+.service-title{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(28px,3vw,40px);font-weight:300;margin-bottom:16px;}
+.service-body{font-size:13px;line-height:1.9;color:#5a5754;margin-bottom:24px;}
+.service-features{list-style:none;padding:0;}
+.service-features li{font-size:12px;letter-spacing:0.1em;color:#8a8680;padding:8px 0;border-bottom:1px solid #ede9e3;display:flex;align-items:center;gap:10px;}
+.service-features li::before{content:'—';color:#d4d0cb;}
+.service-img-wrap{aspect-ratio:4/3;overflow:hidden;}
+.service-img-wrap img{width:100%;height:100%;object-fit:cover;transition:transform 0.6s;}
+.service-img-wrap:hover img{transform:scale(1.04);}
+.cta-band{padding:80px 60px;background:#f5f2ee;text-align:center;}
+.cta-band h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(28px,3.5vw,44px);font-weight:300;margin-bottom:12px;}
+.cta-band p{font-size:13px;color:#5a5754;max-width:480px;margin:0 auto 28px;}
+@media(max-width:900px){
+  .services-section{padding:50px 30px;}
+  .service-inner{grid-template-columns:1fr;gap:32px;}
+  .service-inner.reverse{direction:ltr;}
+  .services-hero-overlay{padding:30px;}
+  .cta-band{padding:60px 30px;}
+}
+</style>
+</head>
+<body>
+
+<nav id="main-nav">
+  <a href="index.html" class="nav-logo" style="display: flex; align-items: center; gap: 12px;">
+    <img src="images/logo.png" alt="Logo" class="nav-logo-img" style="height: 48px; width: auto;"/>
+    <span class="nav-logo-text" style="font-family:'Cormorant Garamond',Georgia,serif;font-size:18px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--black);">Ghenghis Luxury</span>
+  </a>
+  <ul class="nav-links">
+    <li class="nav-item">
+      <a href="products.html">Products</a>
+      <div class="dropdown">
+        <a href="#doors">Doors</a><a href="#pop">POP</a><a href="#tiling">Tiling</a>
+        <a href="#plumbing">Plumbing</a><a href="#architecture">Architecture</a><a href="#screading">Screading</a>
+      </div>
+    </li>
+    <li class="nav-item"><a href="project.html">Project</a></li>
+    <li class="nav-item"><a href="philosophy.html">About</a></li>
+    <li class="nav-item"><a href="leadership.html">Leadership</a></li>
+    <li class="nav-item"><a href="bespoke.html">Bespoke</a></li>
+    <li class="nav-item"><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-right"><a href="contact.html">Enquire</a></div>
+  <button id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div id="mobile-nav">
+  <a class="mob-link" href="index.html">Home</a>
+  <a class="mob-link" href="products.html">Products</a>
+  <a class="mob-sub" href="#doors">— Doors</a><a class="mob-sub" href="#pop">— POP</a>
+  <a class="mob-sub" href="#tiling">— Tiling</a><a class="mob-sub" href="#plumbing">— Plumbing</a>
+  <a class="mob-sub" href="#architecture">— Architecture</a><a class="mob-sub" href="#screading">— Screading</a>
+  <a class="mob-link" href="project.html">Project</a>
+  <a class="mob-link" href="philosophy.html">About</a>
+  <a class="mob-link" href="leadership.html">Leadership</a>
+  <a class="mob-link" href="bespoke.html">Bespoke</a>
+  <a class="mob-link" href="contact.html">Contact</a>
+</div>
+
+<div class="services-hero">
+  <img src="images/hero_living_room.png" alt="Ghenghis Luxury Services"/>
+  <div class="services-hero-overlay"><h1>Our Services</h1></div>
+</div>
+
+<div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span style="color:var(--black)">Products &amp; Services</span></div>
+
+<!-- DOORS -->
+<div class="services-section" id="doors">
+  <div class="service-inner reveal">
+    <div>
+      <div class="service-number">01</div>
+      <p style="font-size:10px;letter-spacing:0.25em;text-transform:uppercase;color:#8a8680;margin-bottom:8px">Premium Service</p>
+      <h2 class="service-title">Doors</h2>
+      <p class="service-body">We supply and install a curated range of premium doors for residential and commercial spaces across Lagos. From solid hardwood panel doors to contemporary pivot and flush designs, every door is selected for durability, beauty, and precision fit.</p>
+      <ul class="service-features">
+        <li>Solid Wood Panel Doors</li>
+        <li>Contemporary Flush Doors</li>
+        <li>Pivot & Feature Entrance Doors</li>
+        <li>Security & Armoured Doors</li>
+        <li>Sliding & Bi-fold Systems</li>
+      </ul>
+      <br/><a href="contact.html" class="btn-text">Request a Quote</a>
+    </div>
+    <div class="service-img-wrap">
+      <img src="images/service_doors.png" alt="Premium Doors Nigeria"/>
+    </div>
+  </div>
+</div>
+
+<!-- POP -->
+<div class="services-section" id="pop" style="background:#faf9f7">
+  <div class="service-inner reverse reveal">
+    <div>
+      <div class="service-number">02</div>
+      <p style="font-size:10px;letter-spacing:0.25em;text-transform:uppercase;color:#8a8680;margin-bottom:8px">Premium Service</p>
+      <h2 class="service-title">POP (Plaster of Paris)</h2>
+      <p class="service-body">Our skilled artisans design and execute bespoke POP ceilings, cornices, columns, and decorative mouldings that transform any interior. We work across all architectural styles — from minimalist clean lines to ornate classical designs.</p>
+      <ul class="service-features">
+        <li>Suspended POP Ceilings</li>
+        <li>Coffered & Tray Ceilings</li>
+        <li>Decorative Cornices & Mouldings</li>
+        <li>Feature Columns & Archways</li>
+        <li>Custom 3D Wall Panels</li>
+      </ul>
+      <br/><a href="contact.html" class="btn-text">Request a Quote</a>
+    </div>
+    <div class="service-img-wrap">
+      <img src="images/service_pop.png" alt="POP Ceiling Design Nigeria"/>
+    </div>
+  </div>
+</div>
+
+<!-- TILING -->
+<div class="services-section" id="tiling">
+  <div class="service-inner reveal">
+    <div>
+      <div class="service-number">03</div>
+      <p style="font-size:10px;letter-spacing:0.25em;text-transform:uppercase;color:#8a8680;margin-bottom:8px">Premium Service</p>
+      <h2 class="service-title">Tiling</h2>
+      <p class="service-body">Premium tile installation for floors, walls, and feature surfaces. We source and lay high-quality tiles including marble, porcelain, ceramic, terrazzo, and mosaic — expertly fitted for a flawless, long-lasting finish.</p>
+      <ul class="service-features">
+        <li>Marble & Natural Stone</li>
+        <li>Large Format Porcelain Slabs</li>
+        <li>Herringbone & Pattern Laying</li>
+        <li>Terrazzo & Mosaic Work</li>
+        <li>Bathroom & Kitchen Wall Tiling</li>
+      </ul>
+      <br/><a href="contact.html" class="btn-text">Request a Quote</a>
+    </div>
+    <div class="service-img-wrap">
+      <img src="images/service_tiling.png" alt="Luxury Tiling Nigeria"/>
+    </div>
+  </div>
+</div>
+
+<!-- PLUMBING -->
+<div class="services-section" id="plumbing" style="background:#faf9f7">
+  <div class="service-inner reverse reveal">
+    <div>
+      <div class="service-number">04</div>
+      <p style="font-size:10px;letter-spacing:0.25em;text-transform:uppercase;color:#8a8680;margin-bottom:8px">Premium Service</p>
+      <h2 class="service-title">Plumbing</h2>
+      <p class="service-body">From concept to completion, our licensed plumbers deliver reliable and elegantly executed plumbing works for luxury residential and commercial projects. We handle everything from full bathroom fitouts to complex pipe installations.</p>
+      <ul class="service-features">
+        <li>Luxury Bathroom Fitout</li>
+        <li>Water Supply & Drainage Systems</li>
+        <li>Borehole & Water Treatment</li>
+        <li>Rainwater Harvesting Systems</li>
+        <li>Maintenance & Emergency Services</li>
+      </ul>
+      <br/><a href="contact.html" class="btn-text">Request a Quote</a>
+    </div>
+    <div class="service-img-wrap">
+      <img src="images/service_plumbing.png" alt="Premium Plumbing Nigeria"/>
+    </div>
+  </div>
+</div>
+
+<!-- ARCHITECTURE -->
+<div class="services-section" id="architecture">
+  <div class="service-inner reveal">
+    <div>
+      <div class="service-number">05</div>
+      <p style="font-size:10px;letter-spacing:0.25em;text-transform:uppercase;color:#8a8680;margin-bottom:8px">Premium Service</p>
+      <h2 class="service-title">Architecture</h2>
+      <p class="service-body">Our architectural team brings a deep understanding of both modern Nigerian living and international design standards. We deliver complete architectural services — from concept and planning to execution and project management.</p>
+      <ul class="service-features">
+        <li>Residential & Commercial Design</li>
+        <li>Interior Architecture</li>
+        <li>3D Visualisation & Rendering</li>
+        <li>Building Plans & Approvals</li>
+        <li>Project Management</li>
+      </ul>
+      <br/><a href="contact.html" class="btn-text">Request a Quote</a>
+    </div>
+    <div class="service-img-wrap">
+      <img src="images/service_architecture.png" alt="Architecture Services Nigeria"/>
+    </div>
+  </div>
+</div>
+
+<!-- SCREADING -->
+<div class="services-section" id="screading" style="background:#faf9f7">
+  <div class="service-inner reverse reveal">
+    <div>
+      <div class="service-number">06</div>
+      <p style="font-size:10px;letter-spacing:0.25em;text-transform:uppercase;color:#8a8680;margin-bottom:8px">Premium Service</p>
+      <h2 class="service-title">Screading</h2>
+      <p class="service-body">We provide professional floor screading services that create perfectly level, smooth bases ready for any floor finish. Our team uses industry-leading compounds and techniques to ensure durability, moisture resistance, and the ideal surface for your tiles or coverings.</p>
+      <ul class="service-features">
+        <li>Sand & Cement Screeds</li>
+        <li>Self-levelling Compound Application</li>
+        <li>Underfloor Heating Screeds</li>
+        <li>Lightweight Screed Systems</li>
+        <li>Floor Levelling & Repair</li>
+      </ul>
+      <br/><a href="contact.html" class="btn-text">Request a Quote</a>
+    </div>
+    <div class="service-img-wrap">
+      <img src="images/philosophy_image.png" alt="Screading Services"/>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="cta-band reveal">
+  <p style="font-size:10px;letter-spacing:0.25em;text-transform:uppercase;color:#8a8680;margin-bottom:12px">Ready to Begin?</p>
+  <h2>Let's Build Something Exceptional</h2>
+  <p>Contact our team for a consultation. We serve Lagos and surrounding areas with uncompromising quality.</p>
+  <a href="contact.html" style="display:inline-block;padding:14px 36px;background:#111;color:#fff;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;transition:background 0.3s" onmouseover="this.style.background='#3a3228'" onmouseout="this.style.background='#111'">Get in Touch</a>
+</div>
+
+<footer id="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-logo"><img src="images/logo.png" alt="Ghenghis Luxury" onerror="this.outerHTML='<span style=&quot;font-family:Georgia,serif;font-size:16px;letter-spacing:0.1em;text-transform:uppercase;color:#fff&quot;>Ghenghis Luxury</span>'"/></div>
+      <div class="footer-contact">
+        <a href="tel:08143850099">T. 081 4385 0099</a>
+        <a href="mailto:contact@ghenghisluxury.com">contact@ghenghisluxury.com</a>
+      </div>
+    </div>
+    <div class="footer-col"><h5>Services</h5><a href="#doors">Doors</a><a href="#pop">POP</a><a href="#tiling">Tiling</a><a href="#plumbing">Plumbing</a><a href="#architecture">Architecture</a><a href="#screading">Screading</a></div>
+    <div class="footer-col"><h5>Company</h5><a href="philosophy.html">About</a><a href="project.html">Projects</a><a href="bespoke.html">Bespoke</a><a href="contact.html">Contact</a></div>
+    <div class="footer-col"><h5>Legal</h5><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-legal">COMPANY: Ghenghis Luxury &nbsp;|&nbsp; ADDRESS: 16 Jiuhua St, Eti-Osa 106104, Lagos, Nigeria<br>ⓒ GHENGHISLUXURY All rights reserved.</p>
+    <div class="footer-links"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('hamburger').addEventListener('click',function(){document.getElementById('mobile-nav').classList.toggle('open');this.style.opacity=document.getElementById('mobile-nav').classList.contains('open')?'0.5':'1';});
+window.addEventListener('scroll',()=>document.getElementById('main-nav').classList.toggle('scrolled',window.scrollY>40));
+document.getElementById('main-nav').classList.add('scrolled');
+const obs=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting){el.target.classList.add('visible');obs.unobserve(el.target);}});},{threshold:0.08});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>

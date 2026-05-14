@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Contact — Ghenghis Luxury</title>
+<meta name="description" content="Get in touch with Ghenghis Luxury for service enquiries, bespoke consultations, and project collaborations in Nigeria."/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<div id="page-transition"></div>
+
+<nav id="main-nav">
+  <a href="index.html" class="nav-logo" style="display: flex; align-items: center; gap: 12px;">
+    <img src="images/logo.png" alt="Logo" class="nav-logo-img" style="height: 48px; width: auto;"/>
+    <span class="nav-logo-text" style="font-family:'Cormorant Garamond',Georgia,serif;font-size:18px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--black);">Ghenghis Luxury</span>
+  </a>
+  <ul class="nav-links">
+    <li class="nav-item">
+      <a href="products.html">Products</a>
+      <div class="dropdown">
+        <a href="products.html#doors">Doors</a><a href="products.html#pop">POP</a>
+        <a href="products.html#tiling">Tiling</a><a href="products.html#plumbing">Plumbing</a>
+        <a href="products.html#architecture">Architecture</a><a href="products.html#screading">Screading</a>
+      </div>
+    </li>
+    <li class="nav-item"><a href="project.html">Project</a></li>
+    <li class="nav-item"><a href="philosophy.html">About</a></li>
+    <li class="nav-item"><a href="leadership.html">Leadership</a></li>
+    <li class="nav-item"><a href="bespoke.html">Bespoke</a></li>
+    <li class="nav-item"><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-right"><a href="contact.html">Enquire</a></div>
+  <button id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div id="mobile-nav">
+  <a class="mob-link" href="index.html">Home</a>
+  <a class="mob-link" href="products.html">Products</a>
+  <a class="mob-sub" href="products.html#doors">— Doors</a><a class="mob-sub" href="products.html#pop">— POP</a>
+  <a class="mob-sub" href="products.html#tiling">— Tiling</a><a class="mob-sub" href="products.html#plumbing">— Plumbing</a>
+  <a class="mob-sub" href="products.html#architecture">— Architecture</a><a class="mob-sub" href="products.html#screading">— Screading</a>
+  <a class="mob-link" href="project.html">Project</a>
+  <a class="mob-link" href="philosophy.html">About</a>
+  <a class="mob-link" href="leadership.html">Leadership</a>
+  <a class="mob-link" href="bespoke.html">Bespoke</a>
+  <a class="mob-link" href="contact.html">Contact</a>
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero" style="height:40vh">
+  <img src="images/hero_living_room.png" alt="Contact Ghenghis Luxury"/>
+  <div class="page-hero-overlay"><h1>Contact</h1></div>
+</div>
+<div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span style="color:var(--black)">Contact</span></div>
+
+<!-- CONTACT GRID -->
+<div class="contact-grid">
+  <div class="reveal">
+    <p class="section-label">Get in Touch</p>
+    <h2 class="section-title">We'd Love to<br>Hear From You</h2>
+    <div class="contact-detail">
+      <label>Phone</label>
+      <a href="tel:08143850099">08143850099</a>
+    </div>
+    <div class="contact-detail">
+      <label>Email</label>
+      <a href="mailto:contact@ghenghisluxury.com">contact@ghenghisluxury.com</a><br/>
+      <a href="mailto:ghenghisluxury@gmail.com">ghenghisluxury@gmail.com</a>
+    </div>
+    <div class="contact-detail">
+      <label>Address</label>
+      <p>16 Jiuhua st, Eti-Osa 106104<br>Lagos, Nigeria</p>
+    </div>
+    <div class="contact-detail">
+      <label>Showroom Hours</label>
+      <p>Monday – Friday: 10:00 – 18:00<br>Saturday: 11:00 – 17:00<br>Sunday: Closed</p>
+    </div>
+    <div style="margin-top:30px;padding:24px;background:var(--off-white)">
+      <p style="font-size:11px;letter-spacing:0.1em;color:var(--mid-grey);line-height:1.8">For bespoke consultations, project inquiries, or press requests, please complete the form or reach out to us directly via email. Our team will respond promptly.</p>
+    </div>
+  </div>
+
+  <div class="reveal">
+    <p class="section-label">Send a Message</p>
+    <form class="contact-form" id="contact-form" action="mailto:ghenghisluxury@gmail.com" method="post" enctype="text/plain">
+      <div class="form-group">
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" name="Name" required placeholder="Your name"/>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="Email" required placeholder="your@email.com"/>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="Phone" placeholder="081 0000 0000"/>
+      </div>
+      <div class="form-group">
+        <label for="inquiry">Type of Inquiry</label>
+        <select id="inquiry" name="Inquiry">
+          <option value="">Select an option</option>
+          <option value="product">Service Inquiry</option>
+          <option value="bespoke">Bespoke Consultation</option>
+          <option value="project">Project Collaboration</option>
+          <option value="press">Press &amp; Media</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Message *</label>
+        <textarea id="message" name="Message" required placeholder="Tell us about your project or inquiry…"></textarea>
+      </div>
+      <button type="submit" class="btn-submit">Send Message</button>
+    </form>
+  </div>
+</div>
+
+<!-- MAP PLACEHOLDER -->
+<div style="height:400px;background:var(--cream);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden">
+  <img src="images/project_hotel.png" alt="Location" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.3"/>
+  <div style="position:relative;text-align:center;z-index:1">
+    <p style="font-size:10px;letter-spacing:0.25em;text-transform:uppercase;color:var(--mid-grey);margin-bottom:8px">Our Location</p>
+    <p style="font-family:var(--font-serif);font-size:24px;font-weight:300;margin-bottom:16px">16 Jiuhua st,<br>Eti-Osa 106104, Lagos</p>
+  </div>
+</div>
+
+<footer id="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-logo"><img src="images/logo.png" alt="Ghenghis Luxury" onerror="this.outerHTML='<span style=&quot;font-family:Georgia,serif;font-size:16px;letter-spacing:0.1em;text-transform:uppercase;color:#fff&quot;>Ghenghis Luxury</span>'"/></div>
+      <div class="footer-contact">
+        <a href="tel:08143850099">T. 081 4385 0099</a>
+        <a href="mailto:contact@ghenghisluxury.com">contact@ghenghisluxury.com</a>
+      </div>
+    </div>
+    <div class="footer-col"><h5>Services</h5><a href="products.html#doors">Doors</a><a href="products.html#pop">POP</a><a href="products.html#tiling">Tiling</a><a href="products.html#plumbing">Plumbing</a><a href="products.html#architecture">Architecture</a><a href="products.html#screading">Screading</a></div>
+    <div class="footer-col"><h5>Company</h5><a href="philosophy.html">About</a><a href="project.html">Projects</a><a href="bespoke.html">Bespoke</a><a href="contact.html">Contact</a></div>
+    <div class="footer-col"><h5>Legal Info</h5><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-legal">COMPANY: Ghenghis Luxury &nbsp;|&nbsp; ADDRESS: 16 Jiuhua St, Eti-Osa 106104, Lagos, Nigeria<br>ⓒ GHENGHISLUXURY All rights reserved.</p>
+    <div class="footer-links"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('hamburger').addEventListener('click',function(){document.getElementById('mobile-nav').classList.toggle('open');this.style.opacity=document.getElementById('mobile-nav').classList.contains('open')?'0.5':'1';});
+window.addEventListener('scroll',()=>{document.getElementById('main-nav').classList.toggle('scrolled',window.scrollY>40);});
+document.getElementById('main-nav').classList.add('scrolled');
+const obs=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting){el.target.classList.add('visible');obs.unobserve(el.target);}});},{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>GHENGHIS LUXURY — Premium Interior & Furniture Solutions</title>
+<meta name="description" content="Ghenghis Luxury — Handcrafted contemporary furniture and premium interior solutions. Doors, POP, Tiling, Plumbing, Architecture and more."/>
+<link rel="stylesheet" href="styles.css"/>
+<style>
+/* Extra mobile fixes */
+@media(max-width:768px){
+  .projects-grid{grid-template-columns:1fr!important;}
+  .project-card:first-child{grid-column:span 1!important;}
+  #campaigns .campaigns-inner{flex-direction:column;}
+  .campaign-card{flex:0 0 100%!important;}
+  #collections{flex-wrap:wrap;gap:8px;}
+  .col-links{flex-wrap:wrap;}
+  .col-links a{border:none;padding:4px 10px;}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="main-nav">
+  <a href="index.html" class="nav-logo" style="display: flex; align-items: center; gap: 12px;">
+    <img src="images/logo.png" alt="Logo" class="nav-logo-img" style="height: 48px; width: auto;"/>
+    <span class="nav-logo-text" style="font-family:'Cormorant Garamond',Georgia,serif;font-size:18px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--black);">Ghenghis Luxury</span>
+  </a>
+  <ul class="nav-links">
+    <li class="nav-item">
+      <a href="products.html">Products</a>
+      <div class="dropdown">
+        <a href="products.html#doors">Doors</a>
+        <a href="products.html#pop">POP</a>
+        <a href="products.html#tiling">Tiling</a>
+        <a href="products.html#plumbing">Plumbing</a>
+        <a href="products.html#architecture">Architecture</a>
+        <a href="products.html#screading">Screading</a>
+      </div>
+    </li>
+    <li class="nav-item"><a href="project.html">Project</a></li>
+    <li class="nav-item">
+      <a href="philosophy.html">About</a>
+      <div class="dropdown">
+        <a href="philosophy.html">Philosophy</a>
+        <a href="philosophy.html">Archive</a>
+        <a href="philosophy.html">Brand Campaign</a>
+      </div>
+    </li>
+    <li class="nav-item"><a href="leadership.html">Leadership</a></li>
+    <li class="nav-item"><a href="bespoke.html">Bespoke</a></li>
+    <li class="nav-item"><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="contact.html">Enquire</a>
+  </div>
+  <button id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE NAV -->
+<div id="mobile-nav">
+  <a class="mob-link" href="index.html">Home</a>
+  <a class="mob-link" href="products.html">Products</a>
+  <a class="mob-sub" href="products.html#doors">— Doors</a>
+  <a class="mob-sub" href="products.html#pop">— POP</a>
+  <a class="mob-sub" href="products.html#tiling">— Tiling</a>
+  <a class="mob-sub" href="products.html#plumbing">— Plumbing</a>
+  <a class="mob-sub" href="products.html#architecture">— Architecture</a>
+  <a class="mob-sub" href="products.html#screading">— Screading</a>
+  <a class="mob-link" href="project.html">Project</a>
+  <a class="mob-link" href="philosophy.html">About</a>
+  <a class="mob-link" href="leadership.html">Leadership</a>
+  <a class="mob-link" href="bespoke.html">Bespoke</a>
+  <a class="mob-link" href="contact.html">Contact</a>
+</div>
+
+<!-- HERO SLIDER -->
+<section id="hero">
+  <div class="slide active" id="slide-0">
+    <img src="images/hero_living_room.png" alt="Ghenghis Luxury — Lounge Collection"/>
+    <div class="slide-overlay"></div>
+    <div class="slide-content">
+      <p>2024 Collection</p>
+      <h1>Bridging the Past,<br>to the Future</h1>
+      <a href="products.html" class="btn-outline-white">Explore Collection</a>
+    </div>
+  </div>
+  <div class="slide" id="slide-1">
+    <img src="images/hero_dining_room.png" alt="Ghenghis Luxury — Dining Collection"/>
+    <div class="slide-overlay"></div>
+    <div class="slide-content">
+      <p>Dining Collection</p>
+      <h1>Crafted with<br>Intention</h1>
+      <a href="products.html" class="btn-outline-white">Explore Collection</a>
+    </div>
+  </div>
+  <div class="slide" id="slide-2">
+    <img src="images/hero_bedroom.png" alt="Ghenghis Luxury — Bedroom Collection"/>
+    <div class="slide-overlay"></div>
+    <div class="slide-content">
+      <p>Bespoke Interiors</p>
+      <h1>Timeless Serenity<br>in Every Detail</h1>
+      <a href="bespoke.html" class="btn-outline-white">Our Bespoke Service</a>
+    </div>
+  </div>
+  <div class="hero-controls">
+    <div class="hero-dot active" data-slide="0"></div>
+    <div class="hero-dot" data-slide="1"></div>
+    <div class="hero-dot" data-slide="2"></div>
+  </div>
+  <div class="scroll-indicator">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- COLLECTIONS STRIP -->
+<div id="collections">
+  <span class="col-label">Our Services</span>
+  <div class="col-links">
+    <a href="products.html#doors">Doors</a>
+    <a href="products.html#pop">POP</a>
+    <a href="products.html#tiling">Tiling</a>
+    <a href="products.html#plumbing">Plumbing</a>
+    <a href="products.html#architecture">Architecture</a>
+    <a href="products.html#screading">Screading</a>
+  </div>
+</div>
+
+<!-- CAMPAIGNS -->
+<section id="campaigns">
+  <div class="campaigns-inner">
+    <div class="campaign-card">
+      <img src="images/hero_living_room.png" alt="Luxury Living Spaces"/>
+      <div class="campaign-card-overlay">
+        <h3>Luxury Living Spaces</h3>
+        <a href="philosophy.html" class="campaign-cta">Discover the Collection Story</a>
+      </div>
+    </div>
+    <div class="campaign-card">
+      <img src="images/hero_dining_room.png" alt="Premium Dining Interiors"/>
+      <div class="campaign-card-overlay">
+        <h3>Premium Dining Interiors</h3>
+        <a href="philosophy.html" class="campaign-cta">Discover the Collection Story</a>
+      </div>
+    </div>
+    <div class="campaign-card">
+      <img src="images/hero_bedroom.png" alt="Bespoke Bedroom Design"/>
+      <div class="campaign-card-overlay">
+        <h3>Bespoke Bedroom Design</h3>
+        <a href="bespoke.html" class="campaign-cta">Discover the Collection Story</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="projects-header reveal">
+    <div>
+      <p class="section-label">Featured Projects</p>
+      <h2 class="section-title">Spaces We've Shaped</h2>
+    </div>
+    <a href="project.html">Discover more</a>
+  </div>
+  <div class="projects-grid">
+    <div class="project-card reveal">
+      <img src="images/user_hotel.jpg" alt="Hotel Project"/>
+    </div>
+    <div class="project-card reveal">
+      <img src="images/user_restaurant.jpg" alt="Restaurant Project"/>
+    </div>
+    <div class="project-card reveal">
+      <img src="images/user_residence.jpg" alt="Residence Project"/>
+    </div>
+    <div class="project-card reveal">
+      <img src="images/user_office.jpg" alt="Office Project"/>
+    </div>
+  </div>
+</section>
+
+<!-- PHILOSOPHY BAND -->
+<section id="philosophy-band">
+  <img src="images/philosophy_image.png" alt="Authentic Craftsmanship"/>
+  <div class="phil-overlay"></div>
+  <div class="phil-content reveal">
+    <p class="section-label">Our Philosophy</p>
+    <h2 class="section-title">Rooted in Heritage,<br>Built for Today</h2>
+    <p>Ghenghis Luxury is a brand that draws inspiration from the intrinsic aesthetics and traditional crafts of Nigeria. We aim to transcend meaningless ornamentation and deliver spaces imbued with essential beauty, authenticity, and purpose.</p>
+    <a href="philosophy.html" class="btn-outline-dark">Learn Our Philosophy</a>
+  </div>
+</section>
+
+<!-- ARCHIVES + BESPOKE -->
+<section id="info-blocks">
+  <div class="info-block reveal">
+    <p class="section-label">Archives</p>
+    <h2 class="section-title">Discover Our Activities</h2>
+    <p>Explore the various activities and achievements of Ghenghis Luxury, where the properties of natural materials blend with Nigerian aesthetics to be reborn in contemporary design.</p>
+    <a href="philosophy.html" class="btn-text">Learn more</a>
+  </div>
+  <div class="info-block reveal">
+    <p class="section-label">Bespoke</p>
+    <h2 class="section-title">Custom Interior Consulting</h2>
+    <p>Ghenghis Luxury offers customized interior consulting services tailored to private residences, galleries, hotels, offices, and restaurants. Through close communication with clients, we understand and reflect their needs at every step.</p>
+    <a href="bespoke.html" class="btn-text">Learn more</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <img src="images/logo.png" alt="Ghenghis Luxury" onerror="this.outerHTML='<span style=&quot;font-family:Georgia,serif;font-size:16px;letter-spacing:0.1em;text-transform:uppercase;color:#fff&quot;>Ghenghis Luxury</span>'"/>
+      </div>
+      <div class="footer-contact">
+        <a href="tel:08143850099">T. 081 4385 0099</a>
+        <a href="mailto:contact@ghenghisluxury.com">contact@ghenghisluxury.com</a>
+        <a href="mailto:ghenghisluxury@gmail.com">ghenghisluxury@gmail.com</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5>Services</h5>
+      <a href="products.html#doors">Doors</a>
+      <a href="products.html#pop">POP</a>
+      <a href="products.html#tiling">Tiling</a>
+      <a href="products.html#plumbing">Plumbing</a>
+      <a href="products.html#architecture">Architecture</a>
+      <a href="products.html#screading">Screading</a>
+    </div>
+    <div class="footer-col">
+      <h5>Client Service</h5>
+      <a href="contact.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html">Location</a>
+    </div>
+    <div class="footer-col">
+      <h5>Legal Info</h5>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-legal">COMPANY: Ghenghis Luxury &nbsp;|&nbsp; ADDRESS: 16 Jiuhua St, Eti-Osa 106104, Lagos, Nigeria<br>ⓒ GHENGHISLUXURY All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Slider
+const slides=document.querySelectorAll('.slide'),dots=document.querySelectorAll('.hero-dot');
+let cur=0,timer;
+function goTo(n){slides[cur].classList.remove('active');dots[cur].classList.remove('active');cur=(n+slides.length)%slides.length;slides[cur].classList.add('active');dots[cur].classList.add('active');}
+timer=setInterval(()=>goTo(cur+1),5000);
+dots.forEach(d=>d.addEventListener('click',()=>{clearInterval(timer);goTo(+d.dataset.slide);timer=setInterval(()=>goTo(cur+1),5000);}));
+// Nav scroll
+window.addEventListener('scroll',()=>document.getElementById('main-nav').classList.toggle('scrolled',window.scrollY>40));
+// Hamburger
+const ham=document.getElementById('hamburger'),mob=document.getElementById('mobile-nav');
+ham.addEventListener('click',()=>{mob.classList.toggle('open');ham.style.opacity=mob.classList.contains('open')?'0.5':'1';});
+// Reveal
+const obs=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting){el.target.classList.add('visible');obs.unobserve(el.target);}});},{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
